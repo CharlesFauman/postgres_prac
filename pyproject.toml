@@ -1,0 +1,33 @@
+[project]
+name = "postgres_prac"
+version = "1.0.0"
+description = "postgres practice"
+readme = "README.md"
+requires-python = ">= 3.8"
+# TODO: add licence
+authors = [
+    {name = "Charles Fauman", email = "charlesfauman@gmail.com"},
+]
+classifiers = [
+    "Private :: Do Not Upload"
+]
+dependencies = [
+    "sqlalchemy",
+    "pandas",
+]
+
+[project.optional-dependencies]
+test = [
+
+]
+dev = [
+    "jupytext",
+    "jupyter",
+]
+
+[project.urls]
+repository = "https://github.com/CharlesFauman/TODO"
+
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"

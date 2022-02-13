@@ -6,7 +6,7 @@ postgres:
     - postgres-data:/var/lib/postgresql/data
   environment:
     - POSTGRES_DB=postgres
-    - POSTGRES_USER=admin
+    - POSTGRES_USER=postgres
     - POSTGRES_PASSWORD=password
 
 pgadmin:
@@ -17,5 +17,5 @@ pgadmin:
     - pgadmin-data:/var/lib/pgadmin
   environment:
     - PGADMIN_DEFAULT_EMAIL=charlesfauman@gmail.com
-    - PGADMIN_DEFAULT_PASSWORD=secret
+    - PGADMIN_DEFAULT_PASSWORD=password
     - PGADMIN_LISTEN_PORT=80
